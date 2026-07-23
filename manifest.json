@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "IG DM Scroll Lock",
+  "version": "4.0",
+  "description": "Stops Instagram web DMs from auto-scrolling to the bottom while you're reading older messages. Ctrl+Shift+L toggles it.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}
